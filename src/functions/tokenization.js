@@ -1,6 +1,11 @@
 const stemmer = require('stemmer');
 const sw = require('stopword');
 
+/**
+ * This tokenization function uses two open library.
+ * @param text
+ * @returns {string}
+ */
 const tokenization =  (text) => {
     let split = text.split(/[\[\]<>.,\/#!$%\^&\*;:{}=_()?@\s\'\-\"]/g);
     let newSplit = sw.removeStopwords(split);

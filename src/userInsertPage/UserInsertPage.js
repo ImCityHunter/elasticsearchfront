@@ -1,7 +1,10 @@
 import React from "react";
-import { search } from "../functions/elasticFunctions/elasticSearchFunctions";
+import { search } from "../services/elasticSearchFunctions";
 import ShowRankingPageContainer from "./ShowRankingPageContainer";
 
+/**
+ * The is just the main page for users to insert query
+ */
 class UserInsertPage extends React.Component{
     constructor(props) {
         super(props);
