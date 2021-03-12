@@ -27,6 +27,9 @@ class UserInsertPage extends React.Component{
                 array:response,
                 show:true
             })
+            if(response.length==0){
+                alert('no result, retry');
+            }
         });
     }
 

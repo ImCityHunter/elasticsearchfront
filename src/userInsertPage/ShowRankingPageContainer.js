@@ -17,7 +17,9 @@ class ShowRankingPageContainer extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
+        if(prevState.array.length!=this.state.array.length){
 
+        }
     }
 
     render(){
